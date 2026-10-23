@@ -1,1 +1,500 @@
-blah
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORÉE — Fine jewellery for the everyday</title>
+  <meta name="description" content="Fine jewellery for the everyday. Sculpted with intention, made slowly, and worn your way. Designed in Paris.">
+
+  <!-- Fonts: a serif for headings (Cormorant Garamond) and a sans-serif for body text (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- "defer" runs the script after the HTML has been parsed, so it can find every element -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Lets keyboard users jump past the navigation -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       ANNOUNCEMENT BAR
+       ============================================================ -->
+  <div class="announcement">
+    <p>
+      <span>Complimentary shipping on all orders</span>
+      <span>Made to keep, always</span>
+    </p>
+  </div>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header">
+    <div class="site-header__bar container">
+
+      <!-- Only visible on small screens (see CSS) -->
+      <button class="icon-button menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="site-header__nav" aria-label="Primary">
+        <a href="#collection">Shop all</a>
+        <a href="#collection">Collections</a>
+        <a href="#atelier">Our atelier</a>
+      </nav>
+
+      <a class="logo" href="#" aria-label="ORÉE home">ORÉE</a>
+
+      <div class="site-header__actions">
+        <a class="hide-on-mobile" href="#story">Our story</a>
+        <button class="icon-button" type="button" aria-label="Search">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <a href="#">Bag (<span class="bag-count">0</span>)</a>
+      </div>
+    </div>
+
+    <!-- On mobile the main links sit in a row under the logo -->
+    <nav class="site-header__subnav" aria-label="Secondary">
+      <a href="#collection">Shop all</a>
+      <a href="#collection">Collections</a>
+      <a href="#atelier">Our atelier</a>
+      <a href="#story">Our story</a>
+    </nav>
+
+    <!-- Mobile menu panel: hidden until the menu button is pressed (see main.js) -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden>
+      <ul>
+        <li><a href="#collection">All jewellery</a></li>
+        <li><a href="#collection">Rings</a></li>
+        <li><a href="#collection">Earrings</a></li>
+        <li><a href="#collection">Necklaces &amp; bracelets</a></li>
+        <li><a href="#atelier">Our atelier</a></li>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+         Two columns: text on the left, image on the right.
+         ============================================================ -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Objects of quiet significance</p>
+        <h1 class="hero__title">A form.<br>A feeling.<br>Forever.</h1>
+        <p class="hero__lede">Meet Forma. A small sculpture in recycled gold. Made to become a part of you.</p>
+        <a class="link-arrow" href="#bestsellers">
+          Discover the Forma ring
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+
+        <div class="hero__meta">
+          <span>The permanent collection</span>
+          <span>14k gold · €280</span>
+        </div>
+      </div>
+
+      <figure class="hero__media">
+        <img src="images/hero-forma-ring.jpg" alt="The Forma ring, a sculptural gold ring, resting on a block of stone" width="1592" height="1320">
+        <figcaption class="hero__caption">
+          <span class="hero__caption-number">01</span>
+          <span>
+            <strong>Forma ring</strong>
+            Hand-finished. Never quite the same.
+          </span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============================================================
+         INTRO STRIP
+         ============================================================ -->
+    <section class="intro container">
+      <p class="eyebrow">A little less. A little forever.</p>
+      <p class="intro__statement">Fine jewellery for the everyday. Sculpted with intention, made slowly, and worn your way.</p>
+      <p class="intro__aside">Designed in Paris<br>Est. 2018</p>
+    </section>
+
+    <!-- ============================================================
+         CATEGORIES
+         ============================================================ -->
+    <section class="section" id="collection">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">The Orée collection</p>
+            <h2 class="section-title">Find your everyday extraordinary.</h2>
+          </div>
+          <a class="link-arrow" href="#">
+            Explore all jewellery
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <div class="category-grid">
+          <!-- Each card is one big link. The whole card is clickable. -->
+          <a class="category-card" href="#">
+            <img src="images/category-rings.jpg" alt="A hand wearing a gold signet ring" width="838" height="595" loading="lazy">
+            <div class="category-card__head">
+              <h3>Rings</h3>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p>Small sculptures. Lasting presence.</p>
+          </a>
+
+          <a class="category-card" href="#">
+            <img src="images/category-earrings.jpg" alt="A pair of chunky gold hoop earrings" width="838" height="595" loading="lazy">
+            <div class="category-card__head">
+              <h3>Earrings</h3>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p>Light-catching, from every angle.</p>
+          </a>
+
+          <a class="category-card" href="#">
+            <img src="images/category-necklaces.jpg" alt="Gold hoops and a pendant necklace in a ceramic dish" width="838" height="595" loading="lazy">
+            <div class="category-card__head">
+              <h3>Necklaces &amp; bracelets</h3>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </div>
+            <p>The finishing touch. Every day.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BESTSELLERS
+         ============================================================ -->
+    <section class="section section--tinted" id="bestsellers">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">The pieces you return to</p>
+            <h2 class="section-title">Future heirlooms. Present favourites.</h2>
+          </div>
+          <a class="link-arrow" href="#">
+            Shop bestsellers
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="images/product-forma-ring.jpg" alt="Forma ring in recycled 14k gold" width="623" height="530" loading="lazy">
+              <!-- aria-pressed tells assistive tech whether this toggle is on or off -->
+              <button class="wishlist-button" type="button" aria-pressed="false" aria-label="Save Forma ring to wishlist">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+              </button>
+            </div>
+            <p class="product-card__tag">The signature</p>
+            <div class="product-card__row">
+              <h3><a href="#">Forma ring</a></h3>
+              <p class="product-card__price">€280</p>
+            </div>
+            <p class="product-card__detail">Recycled 14k gold</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="images/product-solis-hoops.jpg" alt="Solis hoops, a pair of gold hoop earrings" width="623" height="530" loading="lazy">
+              <button class="wishlist-button" type="button" aria-pressed="false" aria-label="Save Solis hoops to wishlist">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+              </button>
+            </div>
+            <p class="product-card__tag">Everyday favourite</p>
+            <div class="product-card__row">
+              <h3><a href="#">Solis hoops</a></h3>
+              <p class="product-card__price">€220</p>
+            </div>
+            <p class="product-card__detail">Recycled 14k gold · Pair</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="images/product-trace-pendant.jpg" alt="Trace pendant, a hammered gold disc on a fine chain" width="623" height="530" loading="lazy">
+              <button class="wishlist-button" type="button" aria-pressed="false" aria-label="Save Trace pendant to wishlist">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+              </button>
+            </div>
+            <p class="product-card__tag">A quiet essential</p>
+            <div class="product-card__row">
+              <h3><a href="#">Trace pendant</a></h3>
+              <p class="product-card__price">€195</p>
+            </div>
+            <p class="product-card__detail">Recycled 14k gold · 45 cm</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="images/product-arc-cuff.jpg" alt="Arc cuff, a wavy open gold bracelet" width="623" height="530" loading="lazy">
+              <button class="wishlist-button" type="button" aria-pressed="false" aria-label="Save Arc cuff to wishlist">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+              </button>
+            </div>
+            <p class="product-card__tag">Sculptural form</p>
+            <div class="product-card__row">
+              <h3><a href="#">Arc cuff</a></h3>
+              <p class="product-card__price">€340</p>
+            </div>
+            <p class="product-card__detail">Recycled 14k gold</p>
+          </article>
+        </div>
+
+        <p class="small-print">Thoughtfully made in small batches. All pieces arrive in our signature, plastic-free gift box.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ATELIER (image + dark panel)
+         ============================================================ -->
+    <section class="split split--dark" id="atelier">
+      <div class="split__media">
+        <img src="images/atelier-hands.jpg" alt="An artisan filing a gold ring at a wooden workbench" width="1418" height="1270" loading="lazy">
+      </div>
+      <div class="split__content">
+        <p class="eyebrow">The hand behind the form</p>
+        <h2 class="section-title">Not simply made.<br>Considered.</h2>
+        <p class="split__text">From the first wax carving to the final hand polish, every ORÉE piece passes through the hands of our partner artisans. We work in small batches, giving every curve the time it deserves.</p>
+        <ul class="tag-list">
+          <li>Recycled 14k gold</li>
+          <li>Hand-finished</li>
+          <li>Small batches</li>
+        </ul>
+        <a class="link-arrow" href="#">
+          Inside our atelier
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EVERYDAY EDIT (image + sand panel)
+         ============================================================ -->
+    <section class="split split--sand split--wide-media">
+      <figure class="split__media">
+        <img src="images/everyday-portrait.jpg" alt="A woman wearing gold hoop earrings and a pendant necklace" width="1594" height="1060" loading="lazy">
+        <figcaption class="image-label">Solis hoops + Trace pendant · The daily pairing</figcaption>
+      </figure>
+      <div class="split__content">
+        <p class="eyebrow">The everyday edit</p>
+        <h2 class="section-title">Yours,<br>not precious.</h2>
+        <p class="split__text">The coffee run. A long lunch. Nowhere in particular. Find the pieces that feel so much like you, you forget to take them off.</p>
+        <a class="link-arrow" href="#">
+          Shop the everyday edit
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OUR STORY
+         ============================================================ -->
+    <section class="section" id="story">
+      <div class="container container--inset story">
+        <div class="story__text">
+          <p class="eyebrow">Paris, 2018. A simple idea.</p>
+          <h2 class="section-title">Less, but closer<br>to you.</h2>
+          <p>ORÉE began with founder Camille Laurent’s search for jewellery that felt as personal as a handwritten note. Inspired by the quiet shapes of nature, she created a collection of everyday objects to carry a little meaning.</p>
+          <p>No seasons to chase. No occasion required. Just beautiful things, becoming part of your story.</p>
+          <a class="link-arrow" href="#">
+            Our story
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+        <figure class="story__media">
+          <img src="images/founder-camille.jpg" alt="Founder Camille Laurent sketching at a desk by a Paris window" width="856" height="875" loading="lazy">
+          <figcaption>Camille Laurent · Founder &amp; designer</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIAL
+         ============================================================ -->
+    <section class="section testimonial">
+      <div class="container">
+        <p class="testimonial__stars" aria-label="Rated 5 out of 5">★★★★★</p>
+        <blockquote>
+          <p>“The ring I put on once, and never took off. It feels like it was always mine.”</p>
+        </blockquote>
+        <p class="testimonial__author">Léa M. · Forma ring · Verified customer</p>
+        <p class="testimonial__rating">4.9 / 5 from 286 considered reviews</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROMISES / FEATURES
+         ============================================================ -->
+    <section class="features">
+      <ul class="features__list container">
+        <li class="feature">
+          <svg class="icon icon--accent" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></svg>
+          <h3>On its way, on us</h3>
+          <p>Complimentary shipping on all orders.</p>
+        </li>
+        <li class="feature">
+          <svg class="icon icon--accent" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4"/><path d="M5 12v9h14v-9M12 8v13M12 8S10.5 3.5 8 4.5 9 8 12 8Zm0 0s1.5-4.5 4-3.5S15 8 12 8Z"/></svg>
+          <h3>A little ceremony</h3>
+          <p>Signature gift wrapping, always included.</p>
+        </li>
+        <li class="feature">
+          <svg class="icon icon--accent" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16m0 4v-4h-4"/></svg>
+          <h3>Time to be sure</h3>
+          <p>30-day returns, thoughtfully simple.</p>
+        </li>
+        <li class="feature">
+          <svg class="icon icon--accent" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7ZM18 2v4M16 4h4"/><circle cx="5" cy="20" r="1.2"/></svg>
+          <h3>Here for the long run</h3>
+          <p>Two-year warranty &amp; lifetime care advice.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container container--inset">
+        <p class="eyebrow">A note from you</p>
+        <h2 class="section-title">Tell us about the piece<br>you are looking for.</h2>
+        <p class="contact__intro">Share a few details about your enquiry, sizing question, or gifting request. We reply thoughtfully, usually within one business day.</p>
+
+        <div class="contact">
+          <!-- "novalidate" switches off the browser's built-in error bubbles so main.js can show its own -->
+          <form class="contact-form" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="first-name">First name</label>
+                <input id="first-name" name="firstName" type="text" placeholder="Camille" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="last-name">Last name</label>
+                <input id="last-name" name="lastName" type="text" placeholder="Laurent" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" placeholder="camille@oree.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Sizing advice, gifting, or a custom enquiry">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="2" placeholder="Tell us about the piece you are looking for, your preferred finish, or any questions you have before ordering." required></textarea>
+            </div>
+
+            <div class="contact-form__footer">
+              <!-- aria-live makes screen readers announce text that JavaScript puts here -->
+              <p class="form-status" aria-live="polite">We usually reply within one business day.</p>
+              <button class="button button--dark" type="submit">
+                Send message
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </button>
+            </div>
+          </form>
+
+          <aside class="contact-card">
+            <p class="eyebrow">Our atelier</p>
+            <h3>Need a faster answer?<br>We are here to help.</h3>
+            <ul class="contact-card__list">
+              <li><a href="mailto:hello@oree.com">hello@oree.com</a></li>
+              <li><a href="tel:+33184000000">+33 1 84 00 00 00</a></li>
+              <li>Paris, France</li>
+            </ul>
+            <p class="contact-card__note">Monday to Friday, 10:00–18:00 CET. We reply to all enquiries thoughtfully, usually within one business day.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-cta">
+        <div>
+          <p class="eyebrow">Good things stay with you.</p>
+          <h2 class="footer-cta__title">Find the piece that feels like you.</h2>
+        </div>
+        <a class="button button--light" href="#collection">
+          Shop all jewellery
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-main">
+        <div class="newsletter">
+          <h3>A note from ORÉE.</h3>
+          <p>New pieces, atelier stories, and things worth keeping. In your inbox, only when we have something to say.</p>
+          <form class="newsletter__form" novalidate>
+            <label class="visually-hidden" for="newsletter-email">Email address</label>
+            <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+            </button>
+          </form>
+          <p class="newsletter__note" aria-live="polite">By subscribing, you agree to our <a href="#">Privacy Policy</a>.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">All jewellery</a></li>
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Earrings</a></li>
+              <li><a href="#">Necklaces &amp; bracelets</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Orée</h3>
+            <ul>
+              <li><a href="#">Our story</a></li>
+              <li><a href="#">Our atelier</a></li>
+              <li><a href="#">Materials &amp; care</a></li>
+              <li><a href="#">Journal</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Here to help</h3>
+            <ul>
+              <li><a href="#">Shipping &amp; returns</a></li>
+              <li><a href="#">Size guide</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__logo" aria-hidden="true">ORÉE</p>
+        <p class="footer-bottom__copy">© <span class="current-year">2026</span> ORÉE · Designed in Paris. Worn everywhere.</p>
+        <p class="footer-bottom__legal">
+          <a href="#">Privacy</a> · <a href="#">Terms</a>
+          <span>France / EUR €</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
