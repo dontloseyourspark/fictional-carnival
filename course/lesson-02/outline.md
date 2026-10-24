@@ -1,182 +1,118 @@
-# Lesson 2 — Pictures, links and a proper skeleton
+# Lesson 2 — Your first tags
 
-**Length:** about 15 minutes
-**Students finish with:** the ring photograph on their page, navigation links that jump down the page, an email link, the name "ORÉE" in the browser tab, and the accent back on the É.
-
-**New ideas this lesson:** Sublime Text · the page skeleton (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`, `<title>`) · tags inside tags · attributes · images (`<img>`, `src`, `alt`) · folders and file paths · links (`<a>`, `href`, `id`)
+**Length:** about 10–12 minutes
+**Students finish with:** a page with a real headline, sub-heading and paragraphs, covering the four parts of a website
+**New ideas this lesson:** what a tag is · opening and closing tags · `<h1>`, `<h2>` and `<p>`
 
 ---
 
 ## Before you record
 
-- Install **Sublime Text** (free to try, from sublimetext.com).
-- Copy [start/index.html](start/index.html) into your `oree` folder. It's the result of lesson 1.
-- Have the course **resources** folder ready ([../resources/images/](../resources/images/)), with all the ORÉE photographs. Students download the same folder.
+- Copy [start/index.html](start/index.html) into your `oree` folder. It's the result of lesson 1: one line of plain text.
+- Have the [anatomy diagram](../lesson-01/anatomy.html) from lesson 1 open in a tab.
+- Students keep using **Notepad** (Windows) or **TextEdit** (Mac) this lesson.
 
 ---
 
 ## 1. Where we left off (1 min)
 
-Open last lesson's page in the browser.
+Open `index.html` in the browser.
 
-> "Last time we wrote our first tags and built the four parts of a website. Today we'll add a photograph, make our links work, and wrap the page in its proper packaging."
+> "Last time we made our first webpage. Right now it's just plain words. The browser has no idea which words are a headline and which are a normal sentence. Today we'll tell it, using **tags**. Tags are what HTML really is."
 
-## 2. Meet Sublime Text (2 min)
+**Opening the file to edit it.** Double-clicking `index.html` opens it in the browser, not the editor. Show this once, slowly:
 
-> "Notepad is fine for a few lines, but websites grow quickly. Sublime Text is a notepad that helps you. It's still just text, with a few helpful extras."
+- **Windows:** right-click `index.html` → *Open with* → **Notepad**.
+- **Mac:** right-click `index.html` → *Open With* → **TextEdit**.
 
-1. Open Sublime Text and **drag the `oree` folder onto it**. The folder appears in the sidebar on the left.
-2. Click `index.html` in the sidebar to open it.
+> "From now on we'll have the file open in two places: the editor to write, the browser to look."
 
-Point out:
+## 2. What is a tag? (3 min)
 
-- **Colours:** tags turn one colour and your words another. It's easier to spot mistakes.
-- **Line numbers** down the left.
-- **Closing tags fill themselves in.** Type `</` and Sublime finishes the tag for you.
-
-> "Nothing about the file has changed. It's the same index.html. We're just looking at it in a nicer editor."
-
-## 3. The proper skeleton (4 min)
-
-> "Our page works, but browsers are being polite about it. Every real webpage is wrapped in a standard skeleton. Let's add it."
-
-Type it around the existing content, one line at a time, explaining as you go:
+Add two tags around the headline:
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>ORÉE - Fine jewellery for the everyday</title>
-  </head>
-  <body>
-
-    ...everything from last lesson goes here...
-
-  </body>
-</html>
+<h1>A form. A feeling. Forever.</h1>
 ```
 
-| Line | What it says to the browser |
-|---|---|
-| `<!DOCTYPE html>` | "This is a modern webpage." Always the very first line. |
-| `<html lang="en">` | "The webpage starts here, and it's in English." |
-| `<head>` | Information **about** the page. Nothing in here appears on the page itself. |
-| `<meta charset="UTF-8">` | "Use the full set of letters and symbols," including accents like É. |
-| `<title>` | The name shown in the **browser tab**. |
-| `<body>` | Everything visitors **see**. All our content goes in here. |
+Save, switch to the browser and refresh. The words turn big and bold.
 
-Explain the head and body with a picture students know:
+> "We just told the browser: this is a headline. That's a tag."
 
-> "Think of a parcel. The **head** is the label on the outside: who it's for, what's in it. The **body** is what's inside the box."
+Point to each part, zoomed in:
 
-**Tags inside tags.** Show that `<title>` sits inside `<head>`, and `<head>` sits inside `<html>`, like boxes inside boxes.
+- `<h1>` is the **opening tag**: "a headline starts here."
+- The words in the middle are the **content**: what visitors see.
+- `</h1>` is the **closing tag**: "the headline ends here." The **slash** means *end*.
 
-> "We indent, moving lines in with the Tab key, to show what's inside what. The browser doesn't care, but it makes the file much easier for us to read."
+> "Tags come in pairs, like brackets around a phrase. The tags never appear on the page. They only tell the browser what the words are."
 
-Select the old content and press **Tab** to indent it inside `<body>`.
+**The symbols.** `<` and `>` are the keys next to the M key (with Shift on most keyboards). Show them on screen.
 
-**The accent comes back.** Change `OREE` to `ORÉE` in both places, and add `©` before the year in the footer:
+## 3. Three tags to start with (1 min)
 
-- **Mac:** press <kbd>Option</kbd> + <kbd>E</kbd>, then <kbd>Shift</kbd> + <kbd>E</kbd>.
-- **Windows:** copy and paste it from here: **É ©**
+| Tag | Means | Think of it as |
+|---|---|---|
+| `<h1>` | Heading, level 1 | The main headline. Usually one per page. |
+| `<h2>` | Heading, level 2 | A section heading. |
+| `<p>` | Paragraph | Normal text. |
 
-Save and refresh. The accent shows correctly, and the browser tab now reads "ORÉE - Fine jewellery for the everyday."
+> "h stands for heading, and p for paragraph. That's all we need today."
 
-> "That's what the meta charset line does. Without it, some browsers garble accents."
+## 4. Build the four parts (4 min)
 
-## 4. Add a photograph (4 min)
+Bring back the anatomy diagram.
 
-**Set up the folder.**
+> "Remember our four parts? Let's put a little of each onto our page."
 
-1. Inside `oree`, create a new folder called `images`, all lowercase.
-2. Copy `hero-forma-ring.jpg` from the resources folder into it.
-
-> "Websites keep their pictures in their own folder, like a photo album next to the document."
-
-**Add the tag**, underneath the hero paragraph:
+Add one part at a time. **Save → switch to the browser → refresh** after each one, so students see the loop.
 
 ```html
-<img src="images/hero-forma-ring.jpg" alt="A gold ring resting on a block of stone" width="600">
+<p>OREE - Shop all | Collections | Our atelier | Our story</p>
+
+<h1>A form. A feeling. Forever.</h1>
+<p>Meet Forma. A small sculpture in recycled gold. Made to become a part of you.</p>
+
+<h2>Find your everyday extraordinary.</h2>
+<p>Fine jewellery for the everyday. Sculpted with intention, made slowly, and worn your way.</p>
+
+<p>2026 OREE - Designed in Paris. Worn everywhere.</p>
 ```
 
-Save and refresh. Then go through each part of the line:
+Name each part as you type it:
 
-- `<img>` means **image**. It has **no closing tag**: there are no words to wrap around, the picture *is* the content.
-- **Attributes** are the extra details inside the opening tag, always written as `name="value"`.
-- `src` stands for **source**, meaning where to find the picture. `images/hero-forma-ring.jpg` means *"go into the images folder, then find this file."* The slash separates folder from file.
-- `alt` is the **alternative text**. It's read aloud to people using screen readers, and shown if the picture can't load.
-- `width="600"` is a temporary size limit. The original photo is much bigger. (We'll handle sizes properly with CSS in a later lesson.)
+1. **Navigation:** *"For now it's just words. They become real links in a later lesson."*
+2. **Hero:** the headline and the sentence under it.
+3. **Content:** a section heading and a paragraph.
+4. **Footer:** the small print at the bottom.
 
-**Break it on purpose.** Misspell the file name (`hero-forma-rng.jpg`), save and refresh.
+Things to point out along the way:
 
-> "The browser can't find the picture, so it shows a broken-image icon and our alt text. If an image doesn't show, check the spelling of the path first. Capital letters count, too."
+- **Blank lines and extra spaces don't show up in the browser.** HTML only listens to tags. The blank lines are there to help *us* see the four parts.
+- **The headline is on one line,** even though the design has three. We'll fix that in a later lesson.
 
-Fix it, save and refresh.
+## 5. Break it on purpose (1 min)
 
-## 5. Make the links work (4 min)
+Delete the closing `</h1>`, then save and refresh. Everything after it turns into a giant heading.
 
-> "Links are what make it a *web*: click on something and go somewhere else."
+> "The browser didn't know where the headline ended, so it kept going. If your page ever looks strange, check your closing tags first."
 
-**The link tag.** Show one on its own first:
-
-```html
-<a href="#collection">Collections</a>
-```
-
-- `<a>` stands for **anchor**: *a link*.
-- `href` is **where it goes**.
-- The words between the tags are **what people click**.
-
-**Link type 1: jump to part of the page.** Give the content heading a name with `id`:
-
-```html
-<h2 id="collection">Find your everyday extraordinary.</h2>
-```
-
-Then turn the navigation words into links:
-
-```html
-<p>
-  ORÉE -
-  <a href="#collection">Shop all</a> |
-  <a href="#collection">Collections</a> |
-  <a href="#">Our atelier</a> |
-  <a href="#">Our story</a>
-</p>
-```
-
-- `id="collection"` puts a name tag on that heading.
-- `href="#collection"` means *"jump to whatever is named collection."* The `#` means *on this page*.
-- `href="#"` on its own is a **placeholder**: a link that doesn't go anywhere yet. We'll point those at real sections in lesson 3.
-
-Save, refresh and click **Collections**.
-
-> "If your window is tall, it may barely move, because the page is short. Make the window smaller and try again. The jump matters more as the page grows."
-
-**Link type 2: an email link.** In the footer:
-
-```html
-<a href="mailto:hello@oree.com">hello@oree.com</a>
-```
-
-Click it: the computer's email app opens with the address filled in.
-
-**Link type 3: another website.** Mention it briefly. It's the same tag with a full web address, such as `href="https://www.instagram.com"`. Students try this in the task.
+Put the `</h1>` back, save and refresh.
 
 ## 6. Wrap up (1 min)
 
-- Recap: the skeleton (head = label, body = contents) · attributes are `name="value"` · images need `src` and `alt` · links need `href`.
+- Recap: tags label your words · they come in pairs · the slash means *end* · `<h1>`, `<h2>`, `<p>`.
 - Set the task (below).
-- Next lesson: we'll fill in **the whole page**, every section of the ORÉE design, and learn how to group content into sections.
+- Next lesson: we'll move to **Sublime Text**, *a notepad that helps you*, and give our page its proper structure.
 
 ---
 
 ## Student task
 
-1. Copy `category-earrings.jpg` into your `images` folder and add it under the "Find your everyday extraordinary" paragraph. Write your own `alt` text describing it, and give it `width="400"`.
-2. Add a link to Instagram in the footer: `<a href="https://www.instagram.com">Instagram</a>`.
-3. Change the `<title>` to something of your own. Save, refresh, and check the browser tab.
+1. Add one more section between the content and the footer:
+   - a level 2 heading: `Future heirlooms. Present favourites.`
+   - a paragraph underneath: `Thoughtfully made in small batches.`
+2. Change the main headline to a sentence of your own. Save and refresh to check it.
 
 *Stuck? Compare your file with `finished/index.html`.*
 
@@ -184,10 +120,10 @@ Click it: the computer's email app opens with the address filled in.
 
 ## Notes for you
 
-- **Where the image goes.** In the real design the photo sits beside the headline. That needs CSS (lesson 6), so for now it simply sits underneath.
-- **Why `width="600"`?** Without it, the 1,600-pixel-wide photo fills the whole screen and students can't see anything else. We remove it in the CSS lessons.
-- **Three spellings that must match:** the folder name (`images`), the file name, and the path in `src`. Most "my image won't show" problems are one of these. Lowercase everything and use no spaces.
+- **The name is written OREE throughout the course,** without the accent. Typing É is fiddly on most keyboards. The finished website you show in lesson 1 still says ORÉE, which is fine to mention if anyone asks.
+- **No `<!DOCTYPE>`, `<head>` or `<body>` yet.** Browsers are forgiving and display the page without them. Lesson 3 adds the proper skeleton. If a student asks, say "we'll add the official wrapping next time."
 - **Common problems students will hit:**
-  - The image shows on their computer but not once they upload it (lesson 10): the capital letters in the path don't match the file name. Worth a quick mention now.
-  - The jump link "does nothing": the page is too short to scroll, or the `id` and `href` are spelled differently.
-  - Sublime shows everything in one colour: the file was saved without `.html`, or Sublime needs *View → Syntax → HTML*.
+  - The tags show on the page as text → the file was saved as rich text (Mac) or as `.txt` (Windows). See the setup in lesson 1.
+  - Double-clicking opens the browser, not the editor → use right-click → *Open with*.
+  - Nothing changes after editing → they forgot to save, or to refresh.
+  - Everything is huge → a missing `</h1>` or `</h2>`.

@@ -1,4 +1,4 @@
-ORÉE - ALL THE WORDS ON THE PAGE
+OREE - ALL THE WORDS ON THE PAGE
 ================================
 
 Copy the words from here into your index.html, then wrap them in tags.
@@ -18,7 +18,7 @@ Links (left):   Shop all
                 Collections
                 Our atelier
 
-Logo:           ORÉE
+Logo:           OREE
 
 Links (right):  Our story
                 Bag (0)
@@ -61,7 +61,7 @@ Small print:    Designed in Paris. Est. 2018
 THE COLLECTION
 ------------------------------------------------
 
-Small label:    The Orée collection
+Small label:    The Oree collection
 Heading:        Find your everyday extraordinary.
 Link:           Explore all jewellery
 
@@ -137,7 +137,7 @@ Photo:          atelier-hands.jpg
 Small label:    The hand behind the form
 Heading:        Not simply made.
                 Considered.
-Paragraph:      From the first wax carving to the final hand polish, every ORÉE piece passes through the hands of our partner artisans. We work in small batches, giving every curve the time it deserves.
+Paragraph:      From the first wax carving to the final hand polish, every OREE piece passes through the hands of our partner artisans. We work in small batches, giving every curve the time it deserves.
 
 List:           Recycled 14k gold
                 Hand-finished
@@ -168,7 +168,7 @@ OUR STORY
 Small label:    Paris, 2018. A simple idea.
 Heading:        Less, but closer
                 to you.
-Paragraph 1:    ORÉE began with founder Camille Laurent's search for jewellery that felt as personal as a handwritten note. Inspired by the quiet shapes of nature, she created a collection of everyday objects to carry a little meaning.
+Paragraph 1:    OREE began with founder Camille Laurent's search for jewellery that felt as personal as a handwritten note. Inspired by the quiet shapes of nature, she created a collection of everyday objects to carry a little meaning.
 Paragraph 2:    No seasons to chase. No occasion required. Just beautiful things, becoming part of your story.
 Link:           Our story
 
@@ -235,7 +235,7 @@ Small label:    Good things stay with you.
 Heading:        Find the piece that feels like you.
 Link:           Shop all jewellery
 
-Heading:        A note from ORÉE.
+Heading:        A note from OREE.
 Paragraph:      New pieces, atelier stories, and things worth keeping. In your inbox, only when we have something to say.
 
 (The email sign-up box is added in lesson 10.)
@@ -246,7 +246,7 @@ Links:          All jewellery
                 Earrings
                 Necklaces & bracelets
 
-Heading:        Orée
+Heading:        Oree
 Links:          Our story
                 Our atelier
                 Materials & care
@@ -258,5 +258,5 @@ Links:          Shipping & returns
                 Contact us
                 Instagram
 
-Small print:    © 2026 ORÉE · Designed in Paris. Worn everywhere.
+Small print:    © 2026 OREE · Designed in Paris. Worn everywhere.
                 Privacy · Terms · France / EUR €
