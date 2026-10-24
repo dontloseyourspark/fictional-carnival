@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The four parts of a website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Instructor screen aid for lesson 1. Students don't build this file. -->
+  <style>
+    :root {
+      --cream: #f0ece5;
+      --stone: #e7e2d9;
+      --sand: #ddd3c2;
+      --forest: #2f322d;
+      --ink: #2a2721;
+      --muted: #6f6a62;
+      --gold: #8a6a3f;
+      --block: #cfc6b6;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 3rem 1.5rem;
+      background: var(--stone);
+      color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    .stage {
+      display: grid;
+      grid-template-columns: minmax(0, 46rem) minmax(0, 24rem);
+      gap: 3rem;
+      align-items: center;
+      width: 100%;
+      max-width: 76rem;
+    }
+
+    h1 {
+      margin-bottom: 0.75rem;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.05;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    /* The pretend browser window */
+    .browser {
+      overflow: hidden;
+      border-radius: 10px;
+      background: var(--cream);
+      box-shadow: 0 20px 50px rgb(42 39 33 / 0.15);
+    }
+
+    .browser__bar {
+      display: flex;
+      gap: 6px;
+      padding: 12px 14px;
+      background: var(--sand);
+    }
+
+    .browser__bar span {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: rgb(42 39 33 / 0.25);
+    }
+
+    /* Each of the four parts */
+    .part {
+      position: relative;
+      padding: 1.25rem 1.5rem;
+      border: 2px dashed transparent;
+    }
+
+    .part + .part {
+      border-top: 1px solid rgb(42 39 33 / 0.1);
+    }
+
+    .label {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.75rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 9rem;
+    }
+
+    .logo {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.6rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      padding-block: 3rem 2rem;
+    }
+
+    .hero h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .hero__image {
+      height: 9rem;
+      background: linear-gradient(135deg, #b89a6c, #8a6a3f);
+    }
+
+    /* Content */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      height: 5rem;
+      background: var(--block);
+    }
+
+    .lines {
+      display: grid;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .lines span {
+      height: 0.55rem;
+      border-radius: 4px;
+      background: var(--block);
+    }
+
+    .lines span:nth-child(2) { width: 80%; }
+    .lines span:nth-child(3) { width: 60%; }
+
+    /* Footer */
+    .footer {
+      background: var(--forest);
+      color: var(--cream);
+      font-size: 0.85rem;
+    }
+
+    .footer .logo {
+      font-size: 1.3rem;
+    }
+
+    /* The explanation list on the right */
+    .key {
+      list-style: none;
+      display: grid;
+      gap: 1.25rem;
+      margin-top: 2rem;
+      padding: 0;
+    }
+
+    .key li {
+      padding-left: 1rem;
+      border-left: 3px solid var(--gold);
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .key strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    @media (max-width: 60rem) {
+      .stage { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+
+    <div class="browser" aria-hidden="true">
+      <div class="browser__bar"><span></span><span></span><span></span></div>
+
+      <div class="part nav">
+        <span class="label">1 · Navigation</span>
+        <span class="logo">ORÉE</span>
+        <span class="links"><span>Shop all</span><span>Collections</span><span>Our story</span></span>
+      </div>
+
+      <div class="part hero">
+        <span class="label">2 · Hero</span>
+        <h2>A form.<br>A feeling.<br>Forever.</h2>
+        <div class="hero__image"></div>
+      </div>
+
+      <div class="part content">
+        <span class="label">3 · Content</span>
+        <div class="cards"><div class="card"></div><div class="card"></div><div class="card"></div></div>
+        <div class="lines"><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="part footer">
+        <span class="label">4 · Footer</span>
+        <span class="logo">ORÉE</span>
+        <p>© 2026 · Designed in Paris</p>
+      </div>
+    </div>
+
+    <div>
+      <h1>The four parts of a website</h1>
+      <p class="intro">Almost every website you visit is built from the same four parts, stacked from top to bottom.</p>
+      <ol class="key">
+        <li><strong>1. Navigation</strong>The name or logo, and links to the other pages. It helps you find your way around.</li>
+        <li><strong>2. Hero</strong>The first big message and picture. It tells you what the site is about in a few seconds.</li>
+        <li><strong>3. Content</strong>Everything in the middle: products, stories, photos, forms. Most of the page lives here.</li>
+        <li><strong>4. Footer</strong>The bottom of the page: contact details, extra links and small print.</li>
+      </ol>
+    </div>
+
+  </div>
+</body>
+</html>
