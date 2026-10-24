@@ -25,9 +25,13 @@
   --color-sand: #ddd3c2;       /* announcement bar, panels, cards */
   --color-forest: #2f322d;     /* dark sections and footer */
   --color-ink: #2a2721;        /* main text */
-  --color-muted: #6f6a62;      /* secondary text */
-  --color-gold: #8a6a3f;       /* accent: eyebrows, icons, underlines */
-  --color-line: #d3ccc0;       /* thin dividers */
+  --color-muted: #5d5952;      /* secondary text */
+  --color-gold: #725734;       /* accent: eyebrows, icons, underlines */
+  --color-line: #d3ccc0;       /* thin decorative dividers */
+  --color-field-line: #8a857d; /* form field underlines, dark enough to see */
+
+  /* Text colours are dark enough to meet the WCAG AA contrast minimum (4.5:1)
+     on cream, stone and sand. Check them again if you change any colour. */
   --color-paper: #f6f2eb;      /* light text on dark backgrounds */
 
   /* Fonts */
@@ -113,6 +117,12 @@ h1, h2, h3 {
 :focus-visible {
   outline: 2px solid var(--color-gold);
   outline-offset: 3px;
+}
+
+/* Gold is too dark to see on the dark sections, so use the light colour there */
+.split--dark :focus-visible,
+.site-footer :focus-visible {
+  outline-color: var(--color-paper);
 }
 
 /* Hidden on screen, but still read out by screen readers */
@@ -446,16 +456,18 @@ h1, h2, h3 {
   object-fit: cover; /* fills the box without stretching, cropping if needed */
 }
 
-/* Caption that sits on top of the photo */
+/* Caption that sits on top of the photo, styled like .image-label */
 .hero__caption {
   position: absolute;
-  left: 2rem;
-  bottom: 1.5rem;
+  left: 1rem;
+  bottom: 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 1rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--color-paper);
   color: var(--color-ink);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   line-height: 1.4;
 }
 
@@ -478,6 +490,12 @@ h1, h2, h3 {
 
   .hero__content {
     padding-block: 5rem 3rem;
+  }
+
+  .hero__caption {
+    left: 1.5rem;
+    bottom: 1.5rem;
+    padding: 0.75rem 1.1rem;
   }
 
   .hero__meta {
@@ -928,8 +946,33 @@ h1, h2, h3 {
   gap: 1.75rem;
 }
 
+/* Floating labels.
+   The empty field shows its label large, inside the field. When the field is
+   focused or filled in, the label shrinks and moves up above it.
+   The top padding on .field leaves room for the small label. */
+.field {
+  position: relative;
+  padding-top: 1.25rem;
+}
+
+/* Resting state: the label sits where the typed text would be */
 .field label {
-  display: block;
+  position: absolute;
+  top: 1.75rem; /* .field padding-top + the field's own padding-top */
+  left: 0;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+  pointer-events: none; /* clicks pass through the label to the field */
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+/* Floating state. ":placeholder-shown" is true while a field is empty,
+   so ":not(:placeholder-shown)" means "something has been typed". */
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field textarea:focus + label,
+.field textarea:not(:placeholder-shown) + label {
+  top: 0;
   color: var(--color-gold);
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -942,14 +985,20 @@ h1, h2, h3 {
   width: 100%;
   padding: 0.5rem 0 0.9rem;
   border: 0;
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-field-line);
   background: transparent;
   font-size: 1.0625rem;
   resize: vertical;
 }
 
+/* Hints stay hidden behind the label until the field is focused */
 .field input::placeholder,
 .field textarea::placeholder {
+  color: transparent;
+}
+
+.field input:focus::placeholder,
+.field textarea:focus::placeholder {
   color: var(--color-muted);
 }
 
