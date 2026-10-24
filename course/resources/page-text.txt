@@ -1,0 +1,262 @@
+ORÉE - ALL THE WORDS ON THE PAGE
+================================
+
+Copy the words from here into your index.html, then wrap them in tags.
+The sections are in the same order as the page, from top to bottom.
+
+Photos: the file name to use, then a suggested description (alt text).
+You're welcome to write your own description.
+
+
+------------------------------------------------
+HEADER
+------------------------------------------------
+
+Announcement:   Complimentary shipping on all orders · Made to keep, always
+
+Links (left):   Shop all
+                Collections
+                Our atelier
+
+Logo:           ORÉE
+
+Links (right):  Our story
+                Bag (0)
+
+
+------------------------------------------------
+HERO
+------------------------------------------------
+
+Small label:    Objects of quiet significance
+
+Headline:       A form.
+                A feeling.
+                Forever.
+
+Paragraph:      Meet Forma. A small sculpture in recycled gold. Made to become a part of you.
+
+Link:           Discover the Forma ring
+
+Details:        The permanent collection · 14k gold · €280
+
+Photo:          hero-forma-ring.jpg
+                The Forma ring, a sculptural gold ring, resting on a block of stone
+
+Photo caption:  01 Forma ring - Hand-finished. Never quite the same.
+
+
+------------------------------------------------
+INTRODUCTION
+------------------------------------------------
+
+Small label:    A little less. A little forever.
+
+Statement:      Fine jewellery for the everyday. Sculpted with intention, made slowly, and worn your way.
+
+Small print:    Designed in Paris. Est. 2018
+
+
+------------------------------------------------
+THE COLLECTION
+------------------------------------------------
+
+Small label:    The Orée collection
+Heading:        Find your everyday extraordinary.
+Link:           Explore all jewellery
+
+Card 1
+  Photo:        category-rings.jpg
+                A hand wearing a gold signet ring
+  Heading:      Rings
+  Text:         Small sculptures. Lasting presence.
+
+Card 2
+  Photo:        category-earrings.jpg
+                A pair of chunky gold hoop earrings
+  Heading:      Earrings
+  Text:         Light-catching, from every angle.
+
+Card 3
+  Photo:        category-necklaces.jpg
+                Gold hoops and a pendant necklace in a ceramic dish
+  Heading:      Necklaces & bracelets
+  Text:         The finishing touch. Every day.
+
+
+------------------------------------------------
+BESTSELLERS
+------------------------------------------------
+
+Small label:    The pieces you return to
+Heading:        Future heirlooms. Present favourites.
+Link:           Shop bestsellers
+
+Product 1
+  Photo:        product-forma-ring.jpg
+                Forma ring, a gold signet ring with an oval face
+  Label:        The signature
+  Name:         Forma ring
+  Price:        €280
+  Details:      Recycled 14k gold
+
+Product 2
+  Photo:        product-solis-hoops.jpg
+                Solis hoops, a pair of rounded gold hoop earrings
+  Label:        Everyday favourite
+  Name:         Solis hoops
+  Price:        €220
+  Details:      Recycled 14k gold · Pair
+
+Product 3
+  Photo:        product-trace-pendant.jpg
+                Trace pendant, a hammered gold disc on a fine chain
+  Label:        A quiet essential
+  Name:         Trace pendant
+  Price:        €195
+  Details:      Recycled 14k gold · 45 cm
+
+Product 4
+  Photo:        product-arc-cuff.jpg
+                Arc cuff, a wavy open gold bracelet
+  Label:        Sculptural form
+  Name:         Arc cuff
+  Price:        €340
+  Details:      Recycled 14k gold
+
+Small print:    Thoughtfully made in small batches. All pieces arrive in our signature, plastic-free gift box.
+
+
+------------------------------------------------
+THE ATELIER
+------------------------------------------------
+
+Photo:          atelier-hands.jpg
+                An artisan filing a gold ring at a wooden workbench
+
+Small label:    The hand behind the form
+Heading:        Not simply made.
+                Considered.
+Paragraph:      From the first wax carving to the final hand polish, every ORÉE piece passes through the hands of our partner artisans. We work in small batches, giving every curve the time it deserves.
+
+List:           Recycled 14k gold
+                Hand-finished
+                Small batches
+
+Link:           Inside our atelier
+
+
+------------------------------------------------
+THE EVERYDAY EDIT
+------------------------------------------------
+
+Photo:          everyday-portrait.jpg
+                A woman wearing gold hoop earrings and a pendant necklace
+Photo caption:  Solis hoops + Trace pendant · The daily pairing
+
+Small label:    The everyday edit
+Heading:        Yours,
+                not precious.
+Paragraph:      The coffee run. A long lunch. Nowhere in particular. Find the pieces that feel so much like you, you forget to take them off.
+Link:           Shop the everyday edit
+
+
+------------------------------------------------
+OUR STORY
+------------------------------------------------
+
+Small label:    Paris, 2018. A simple idea.
+Heading:        Less, but closer
+                to you.
+Paragraph 1:    ORÉE began with founder Camille Laurent's search for jewellery that felt as personal as a handwritten note. Inspired by the quiet shapes of nature, she created a collection of everyday objects to carry a little meaning.
+Paragraph 2:    No seasons to chase. No occasion required. Just beautiful things, becoming part of your story.
+Link:           Our story
+
+Photo:          founder-camille.jpg
+                Founder Camille Laurent sketching at a desk by a Paris window
+Photo caption:  Camille Laurent · Founder & designer
+
+
+------------------------------------------------
+TESTIMONIAL
+------------------------------------------------
+
+Stars:          ★★★★★
+Quote:          "The ring I put on once, and never took off. It feels like it was always mine."
+Who said it:    Léa M. · Forma ring · Verified customer
+Rating:         4.9 / 5 from 286 considered reviews
+
+
+------------------------------------------------
+OUR PROMISES
+------------------------------------------------
+
+Promise 1
+  Heading:      On its way, on us
+  Text:         Complimentary shipping on all orders.
+
+Promise 2
+  Heading:      A little ceremony
+  Text:         Signature gift wrapping, always included.
+
+Promise 3
+  Heading:      Time to be sure
+  Text:         30-day returns, thoughtfully simple.
+
+Promise 4
+  Heading:      Here for the long run
+  Text:         Two-year warranty & lifetime care advice.
+
+
+------------------------------------------------
+CONTACT
+------------------------------------------------
+
+Small label:    A note from you
+Heading:        Tell us about the piece
+                you are looking for.
+Paragraph:      Share a few details about your enquiry, sizing question, or gifting request. We reply thoughtfully, usually within one business day.
+
+(The contact form is added in lesson 10.)
+
+Small label:    Our atelier
+Heading:        Need a faster answer? We are here to help.
+List:           hello@oree.com
+                +33 1 84 00 00 00
+                Paris, France
+Small print:    Monday to Friday, 10:00-18:00 CET. We reply to all enquiries thoughtfully, usually within one business day.
+
+
+------------------------------------------------
+FOOTER
+------------------------------------------------
+
+Small label:    Good things stay with you.
+Heading:        Find the piece that feels like you.
+Link:           Shop all jewellery
+
+Heading:        A note from ORÉE.
+Paragraph:      New pieces, atelier stories, and things worth keeping. In your inbox, only when we have something to say.
+
+(The email sign-up box is added in lesson 10.)
+
+Heading:        Explore
+Links:          All jewellery
+                Rings
+                Earrings
+                Necklaces & bracelets
+
+Heading:        Orée
+Links:          Our story
+                Our atelier
+                Materials & care
+                Journal
+
+Heading:        Here to help
+Links:          Shipping & returns
+                Size guide
+                Contact us
+                Instagram
+
+Small print:    © 2026 ORÉE · Designed in Paris. Worn everywhere.
+                Privacy · Terms · France / EUR €
