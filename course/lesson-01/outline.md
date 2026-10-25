@@ -100,6 +100,7 @@ Let's have a look at our design. Some of the biggest words on the page are in th
 
 ```
 A form. A feeling. Forever.
+Meet Forma. A small sculpture in recycled gold. Made to become a part of you.
 ```
 
 1. **Save it** into the `oree` folder as `index.html`.
@@ -108,6 +109,10 @@ A form. A feeling. Forever.
 2. Open the `oree` folder and **double-click `index.html`**. It opens in the browser.
 
 Congratulations! You've made your first webpage! It doesn't look like much yet, but we'll improve it in the following lessons.
+
+> Point out that the two lines appear joined together on one line in the browser.
+
+Did you notice? We wrote two lines, but the browser shows them as one. That's because we haven't told the browser which words are a heading and which are a sentence yet. That's exactly what we'll do in the next lesson.
 
 ## 5. Wrap up (1 min)
 

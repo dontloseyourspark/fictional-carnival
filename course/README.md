@@ -13,8 +13,8 @@ The course writes the name as **OREE**, without the accent, because typing É is
 | # | Lesson | New ideas | Students finish with |
 |---|---|---|---|
 | 1 | What is a website? | The four parts of a website · what HTML is · `.html` files | Their first webpage, written in Notepad |
-| 2 | Your first tags | Opening and closing tags · `<h1>`, `<h2>`, `<p>` | Headings and paragraphs for the four parts |
-| 3 | A proper skeleton | Sublime Text · `<!DOCTYPE>`, `<head>`, `<body>`, `<title>` · tags inside tags | A properly structured page, named in the browser tab |
+| 2 | Your first tags | Sublime Text · opening and closing tags · `<h1>`, `<h2>`, `<p>` | Headings and paragraphs for the four parts |
+| 3 | A proper skeleton | `<!DOCTYPE>`, `<head>`, `<body>`, `<title>` · tags inside tags | A properly structured page, named in the browser tab |
 | 4 | Adding a photo | Folders · `<img>`, `src`, `alt` · file paths | The ring photograph on their page |
 | 5 | Grouping the page | `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>` · headings in order · comments | The four parts, properly labelled |
 | 6 | Lists and links | `<ul>`, `<li>` · `<a>`, `href` · email and web links | Navigation that works as links |
