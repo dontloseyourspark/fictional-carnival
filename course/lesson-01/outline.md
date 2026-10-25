@@ -33,7 +33,7 @@ If it seems scary, don't worry, I'll hold your hand along the way and you can de
 
 > Open the finished ORÉE site and scroll through it slowly.
 
-Over the next ten lessons, we're going to build this website together, starting from a blank page. You don't need any experience.
+Step by step, we're going to build this website together, starting from a blank page. You don't need any experience.
 
 ## 2. The four parts of a website (2–3 min)
 
